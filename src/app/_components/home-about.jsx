@@ -27,7 +27,7 @@ const HomeAbout = ({ aboutData }) => {
         <img
           alt={aboutData?.imageAlt || "Warehouse with shelves filled with boxes and products"}
           className="w-full md:max-w-lg h-auto rounded-lg shadow-lg"
-          src={aboutData?.image || "https://storage.googleapis.com/a1aa/image/L37J3pA1JjIl9lbL4pVsPkTSwaCj6hUtJntFJdHlzs4.jpg"}
+          src={aboutData?.image || "/images/01.jpg"}
         />
       </div>
     </div>

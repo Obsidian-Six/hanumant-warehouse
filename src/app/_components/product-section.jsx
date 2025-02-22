@@ -26,7 +26,7 @@ const ProductSection = () => {
       description:
         "Guar Churi is a by-product of guar gum processing, rich in protein and fiber. It is widely used in the cattle feed industry as a cost-effective and nutritious feed ingredient.",
       image:
-        "https://5.imimg.com/data5/FG/MV/OQ/SELLER-13496523/cottan-seed-binola-.jpg",
+        "https://3.imimg.com/data3/HG/WP/MY-5308089/guar-meal-churi-250x250.png",
       alt: "Guar churi",
     },
     {

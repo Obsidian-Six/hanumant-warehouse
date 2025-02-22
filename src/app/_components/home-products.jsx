@@ -8,21 +8,21 @@ const products = [
     name: 'GUAR REFINED DALL',
     description:
       'Guar refined dall is obtained after processing guar seeds. It is widely used in various industries and food applications due to its high-quality standards and purity.',
-    image: 'https://images.jdmagicbox.com/quickquotes/images_main/guar-refined-splits-neepo-splits-93-378580090-opje1.jpg',
+    image: 'https://5.imimg.com/data5/IOS/Default/2023/3/293651740/VU/RC/TG/80380709/product-jpeg-500x500.png',
     alt: 'Guar refined dall',
   },
   {
     name: 'GUAR ROASTED KORMA',
     description:
       'Roasted Guar Korma is a high-protein animal feed supplement. It is roasted at high temperatures to enhance its protein content, making it highly digestible and nutritious for livestock and poultry.',
-    image: 'https://prodigyfoods.in/wp-content/uploads/2019/09/roasted.jpg',
+    image: 'https://5.imimg.com/data5/IOS/Default/2023/3/293651590/QZ/DC/VZ/80380709/product-jpeg-500x500.png',
     alt: 'Guar roasted korma',
   },
   {
     name: 'GUAR CHURI',
     description:
       'Guar Churi is a by-product of guar gum processing, rich in protein and fiber. It is widely used in the cattle feed industry as a cost-effective and nutritious feed ingredient.',
-    image: 'https://5.imimg.com/data5/FG/MV/OQ/SELLER-13496523/cottan-seed-binola-.jpg',
+    image: 'https://3.imimg.com/data3/HG/WP/MY-5308089/guar-meal-churi-250x250.png',
     alt: 'Guar churi',
   }
 ];

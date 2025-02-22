@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         data-new-gr-c-s-check-loaded="14.12223.0"
-        data-gr-ext-installed=""
         cz-shortcut-listen="true"
       >
         <meta charSet="utf-8" />
@@ -41,20 +40,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        {/* <div className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-primary-main text-white py-2 px-4 rounded-r-lg z-10 flex flex-col gap-2">
-          <Link className="" href="#">
-            <i className="fab fa-facebook-f"></i>
-          </Link>
-          <Link className="" href="#">
-            <i className="fab fa-twitter"></i>
-          </Link>
-          <Link className="" href="#">
-            <i className="fab fa-linkedin-in"></i>
-          </Link>
-          <Link className="" href="#">
-            <i className="fab fa-pinterest"></i>
-          </Link>
-        </div> */}
+
         <div className="fixed bottom-4 right-4 z-20">
         <Link
         href="https://wa.me/919999999999&text=Hey!%20Can%20I%20Get%20More%20Info%20On%20This?" // Replace with actual WhatsApp number
