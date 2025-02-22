@@ -88,36 +88,51 @@ export default function BlogPage() {
   ];
 
   return (
-    <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8 max-w-7xl mx-auto">
-      {blogs.map((blog, i) => (
-        <li
-          key={i}
-          className="relative flex flex-col items-start bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-        >
-          <div className="w-full h-56 overflow-hidden">
-            <img
-              src={"https://blog.nbs-us.com/hubfs/Warehouse_automation_sm.jpg"}
-              alt={blog.title}
-              className="object-cover h-full w-full"
-            />
-          </div>
-          <div className="p-4 flex flex-col">
-            <span className="text-sm text-gray-500 mb-2">{blog.category}</span>
-            <h3 className="text-lg font-bold text-primary-main mb-3">
-              {blog.title}
-            </h3>
-            <p className="text-sm text-gray-700 mb-4 line-clamp-2">
-              {blog.description}
-            </p>
-            {/* <Link
-              href={blog.link}
-              className="mt-auto inline-block text-sm font-medium text-primary-main hover:underline"
-            >
-              Read More
-            </Link> */}
-          </div>
-        </li>
-      ))}
-    </ul>
+    <section className="max-w-7xl mx-auto py-10 px-6">
+      {/* Section Title */}
+      <h2 className="text-3xl font-bold text-primary-main mb-8 text-center font-montserrat">
+        Latest Blogs
+      </h2>
+
+      {/* Blog Grid */}
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {blogs.map((blog, i) => (
+          <li
+            key={i}
+            className="relative flex flex-col items-start bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+          >
+            {/* Blog Image */}
+            <div className="w-full h-56 overflow-hidden">
+              <img
+                src={"https://blog.nbs-us.com/hubfs/Warehouse_automation_sm.jpg"}
+                alt={blog.title}
+                className="object-cover h-full w-full transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+
+            {/* Blog Content */}
+            <div className="p-5 flex flex-col">
+              <span className="text-sm text-gray-500 mb-2 font-opensans">
+                {blog.category}
+              </span>
+              <h3 className="text-lg font-bold text-primary-main mb-3 font-montserrat line-clamp-2">
+                {blog.title}
+              </h3>
+              <p className="text-sm text-gray-700 mb-4 line-clamp-2 font-opensans">
+                {blog.description}
+              </p>
+
+              {/* Read More Button */}
+              {/* <Link
+                href={blog.link}
+                className="mt-auto inline-block text-sm font-medium text-primary-main hover:underline font-opensans"
+              >
+                Read More →
+              </Link> */}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

@@ -5,6 +5,7 @@ import Footer from "./_components/footer";
 import HomeProducts from "./_components/home-products";
 import HomeFeature from "./_components/home-feature";
 import HomeSection from "./_components/home-section";
+import ContactForm from "./_components/contact-form";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HomeProducts />
       <HomeAbout />
       <HomeFeature />
+      <ContactForm />
       <Footer />
     </div>
   );

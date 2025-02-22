@@ -1,4 +1,6 @@
-import React from 'react';
+"use client"
+
+import React, { useState } from 'react';
 import HeadingMain from './headingMain';
 
 const products = [
@@ -6,7 +8,7 @@ const products = [
     name: 'GUAR REFINED DALL',
     description:
       'Guar refined dall is obtained after processing guar seeds. It is widely used in various industries and food applications due to its high-quality standards and purity.',
-    image: `https://images.jdmagicbox.com/quickquotes/images_main/guar-refined-splits-neepo-splits-93-378580090-opje1.jpg`, 
+    image: 'https://images.jdmagicbox.com/quickquotes/images_main/guar-refined-splits-neepo-splits-93-378580090-opje1.jpg',
     alt: 'Guar refined dall',
   },
   {
@@ -20,57 +22,71 @@ const products = [
     name: 'GUAR CHURI',
     description:
       'Guar Churi is a by-product of guar gum processing, rich in protein and fiber. It is widely used in the cattle feed industry as a cost-effective and nutritious feed ingredient.',
-    image: 'https://5.imimg.com/data5/FG/MV/OQ/SELLER-13496523/cottan-seed-binola-.jpg', 
+    image: 'https://5.imimg.com/data5/FG/MV/OQ/SELLER-13496523/cottan-seed-binola-.jpg',
     alt: 'Guar churi',
-  },
-  {
-    name: 'CUMIN SEED (JEERA)',
-    description:
-      'Cumin seed, also known as Jeera, is one of the most widely used spices in Indian cuisine. It has a distinct aroma and flavor and is known for its health benefits, including aiding digestion.',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnVriOYiylS_ZqbRngEh9USE5Idr2kSIX99A&s', 
-    alt: 'Cumin seed (Jeera)',
   }
 ];
 
 const HomeProducts = () => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
   return (
-    <div className="bg-primary-main/10">
-    <div className="max-w-7xl mx-auto py-10 max-md:px-6">
-      {/* Title Section */}
-      <div className="text-center mb-10">
-        <HeadingMain name="Our Products" />
-        <p className="text-base sm:text-lg text-color-main mt-2 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet consectetur. Tempus metus cras non diam. Porta
-          urna et nec massa.
-        </p>
-      </div>
+    <div className="bg-primary-main/10 relative">
+      <div className="max-w-7xl mx-auto py-10 max-md:px-6">
+        {/* Title Section */}
+        <div className="text-center mb-10">
+          <HeadingMain name="Our Products" />
+          <p className="text-base sm:text-lg text-color-main mt-2 max-w-2xl mx-auto font-opensans">
+            Discover our premium quality products at Hanumant Warehouse. We ensure high standards and excellent service.
+          </p>
+        </div>
 
-      {/* Product Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        {[1, 2, 3].map((product, index) => (
-          <div key={index} className="bg-heaing-main rounded-lg shadow-md overflow-hidden">
-            <img
-              alt="A pile of finely ground product"
-              className="w-full h-56 object-cover"
-              src="https://storage.googleapis.com/a1aa/image/Ux1cDRLI6H-xJ8ECW_Kxb_pYGfZYkJW3w4EMmxts3CQ.jpg"
-            />
-            <div className="p-5">
-              <h2 className="text-lg sm:text-xl font-bold mb-2 text-primary-main">
-                Product {product}
-              </h2>
-              <p className="text-color-main text-sm sm:text-base mb-4">
-                Lorem ipsum dolor sit amet consectetur. Diam id egestas enim ut
-                gravida penatibus.
-              </p>
-              <button className="w-full sm:w-auto bg-transparent text-primary-main font-semibold py-2 px-4 border border-primary-main rounded hover:bg-secondary-main hover:text-white transition duration-300">
-                Learn More
-              </button>
+        {/* Product Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {products.map((ele, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+              <img alt={ele.alt} className="w-full h-56 object-cover" src={ele.image} />
+              <div className="p-5">
+                <h2 className="text-lg sm:text-xl font-bold mb-2 text-primary-main font-montserrat">
+                  {ele.name}
+                </h2>
+                <p className="text-color-main text-sm sm:text-base mb-4 line-clamp-2 font-opensans">
+                  {ele.description}
+                </p>
+                <button 
+                  className="w-full sm:w-auto bg-transparent text-primary-main font-semibold py-2 px-4 border border-primary-main rounded hover:bg-secondary-main hover:text-white transition duration-300"
+                  onClick={() => {
+                    setSelectedProduct(ele);
+                    document.body.style.overflow = "hidden";
+                  }}
+                >
+                  View More
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
 
+      {/* Modal Popup */}
+      {selectedProduct && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 z-50">
+          <div className="bg-white p-6 rounded-lg max-w-xl w-full relative">
+            <button 
+              className="absolute top-1 right-1 hover:text-red-500 text-gray-600 text-3xl" 
+              onClick={() => {
+                setSelectedProduct(null);
+                document.body.style.overflow = "auto";
+              }}
+            >
+              &times;
+            </button>
+            <img src={selectedProduct.image} alt={selectedProduct.alt} className="w-full h-64 object-cover rounded-md" />
+            <h2 className="text-xl font-bold mt-4 text-primary-main font-montserrat">{selectedProduct.name}</h2>
+            <p className="text-color-main mt-2 font-opensans">{selectedProduct.description}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,10 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+         <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
         {/* <div className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-primary-main text-white py-2 px-4 rounded-r-lg z-10 flex flex-col gap-2">
           <Link className="" href="#">
             <i className="fab fa-facebook-f"></i>
@@ -51,9 +56,16 @@ export default function RootLayout({ children }) {
           </Link>
         </div> */}
         <div className="fixed bottom-4 right-4 z-20">
-        <Link href={'https://api.whatsapp.com/send?phone=+919876543210&text=Hey!%20Can%20I%20Get%20More%20Info%20On%20This?'} className="bg-primary-main text-white py-2 px-4 rounded-full flex items-center shadow-md">
+        <Link
+        href="https://wa.me/919999999999&text=Hey!%20Can%20I%20Get%20More%20Info%20On%20This?" // Replace with actual WhatsApp number
+        target="_blank"
+        className="fixed bottom-6 right-6 bg-primary-main text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
+      >
+        <FaWhatsapp className="text-2xl" />
+      </Link>
+        {/* <Link href={'https://api.whatsapp.com/send?phone=+919876543210&text=Hey!%20Can%20I%20Get%20More%20Info%20On%20This?'} className="bg-primary-main text-white py-2 px-4 rounded-full flex items-center shadow-md">
           <i className="fas fa-comments mr-2" /> Click Here To Chat
-        </Link>
+        </Link> */}
       </div>
         {children}
       </body>
