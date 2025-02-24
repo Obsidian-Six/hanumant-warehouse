@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "./contact-form";
 import { FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedinIn, FaPinterest } from "react-icons/fa";
+import Link from "next/link";
 
 const ContactComp = () => {
   return (
@@ -10,12 +11,13 @@ const ContactComp = () => {
         {/* Firm Location */}
         <div className="bg-white shadow-lg p-6 text-center rounded-lg">
           <FaMapMarkerAlt className="text-primary-main text-4xl mb-4 mx-auto" />
-          <h2 className="text-xl font-bold font-montserrat">Firm Name</h2>
+          <h2 className="text-xl font-bold font-montserrat">Hanumant Warehouse</h2>
           <p className="text-sm sm:text-base font-opensans text-gray-600">
-            HANUMANT Warehouse <br />
+            {/* HANUMANT Warehouse <br />
             Kosiyanada, Merta Road Marg <br />
             Merta City 341510 <br />
-            District Nagour, Rajasthan, India
+            District Nagour, Rajasthan, India */}
+            Al Tawhidi Building 1 Office NO 404 - near ADCB Bank - Bur Dubai - Dubai - United Arab Emirates
           </p>
         </div>
 
@@ -24,8 +26,7 @@ const ContactComp = () => {
           <FaMapMarkerAlt className="text-primary-main text-4xl mb-4 mx-auto" />
           <h2 className="text-xl font-bold font-montserrat">We Deal In</h2>
           <p className="text-sm sm:text-base font-opensans text-gray-600">
-            Guar Refined Dall, Guar Roasted Korma, Guar Churi, Jeera, Dillseed, Psyllium Husk, 
-            Fennel Seed, Cumin Seed, Fenugreek Seed.
+          Catalyst International LLC, Business Center, SHAMS FREE ZONE, SHARJAH, UAE
           </p>
         </div>
 
@@ -47,18 +48,15 @@ const ContactComp = () => {
           </p>
           {/* Social Media Links */}
           <div className="flex justify-center space-x-4 mt-4">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <Link href="#" target="_blank" rel="noopener noreferrer">
               <FaFacebookF className="text-primary-main text-2xl hover:text-secondary-main transition-all duration-300" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="#" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="text-primary-main text-2xl hover:text-secondary-main transition-all duration-300" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="#" target="_blank" rel="noopener noreferrer">
               <FaLinkedinIn className="text-primary-main text-2xl hover:text-secondary-main transition-all duration-300" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaPinterest className="text-primary-main text-2xl hover:text-secondary-main transition-all duration-300" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

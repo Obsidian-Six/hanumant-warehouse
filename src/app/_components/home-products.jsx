@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import HeadingMain from './headingMain';
+import Link from 'next/link';
 
 const products = [
   {
@@ -22,7 +23,7 @@ const products = [
     name: 'GUAR CHURI',
     description:
       'Guar Churi is a by-product of guar gum processing, rich in protein and fiber. It is widely used in the cattle feed industry as a cost-effective and nutritious feed ingredient.',
-    image: 'https://3.imimg.com/data3/HG/WP/MY-5308089/guar-meal-churi-250x250.png',
+    image: 'https://5.imimg.com/data5/AB/OF/MY-25306869/chana-dal-churi-500x500.jpg',
     alt: 'Guar churi',
   }
 ];
@@ -53,6 +54,13 @@ const HomeProducts = () => {
                 <p className="text-color-main text-sm sm:text-base mb-4 line-clamp-2 font-opensans">
                   {ele.description}
                 </p>
+                <div className='grid md:grid-cols-2 md:gap-6 gap-2 md:text-base text-sm'>
+                <Link
+                  href={'/#contact'}
+                  className="w-full text-center sm:w-auto text-white font-semibold py-2 px-4 border border-primary-main rounded hover:bg-secondary-main bg-primary-main hover:text-white transition duration-300"
+                >
+                  Enquiry Now
+                </Link>
                 <button 
                   className="w-full sm:w-auto bg-transparent text-primary-main font-semibold py-2 px-4 border border-primary-main rounded hover:bg-secondary-main hover:text-white transition duration-300"
                   onClick={() => {
@@ -62,6 +70,7 @@ const HomeProducts = () => {
                 >
                   View More
                 </button>
+                </div>
               </div>
             </div>
           ))}

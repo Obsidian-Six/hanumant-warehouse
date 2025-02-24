@@ -20,9 +20,9 @@ const HomeHerosection = () => {
 
       {/* Overlay Content */}
       <div className="absolute inset-0 flex items-center px-6 md:px-12 lg:px-24">
-        <div className="flex flex-col justify-center items-start text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-main mb-4 font-montserrat">
-            PREMIUM QUALITY SPICES
+        <div className="flex flex-col justify-center items-start text-left max-w-4xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-main mb-4 font-montserrat uppercase">
+            PREMIUM QUALITY guar gum product
           </h1>
           <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-opensans">
             Exported to 20+ Countries
