@@ -51,10 +51,10 @@ export default function Footer() {
           <Link href="/blogs" className="font-medium hover:text-primary-main flex items-center gap-2">
             <RiArticleLine className="text-lg" /> Our Blogs
           </Link>
-          <Link href="/aboutUs" className="font-medium hover:text-primary-main flex items-center gap-2">
+          <Link href="/about-us" className="font-medium hover:text-primary-main flex items-center gap-2">
             <IoInformationCircleOutline className="text-lg" /> About Us
           </Link>
-          <Link href="/contactUs" className="font-medium hover:text-primary-main flex items-center gap-2">
+          <Link href="/contact-us" className="font-medium hover:text-primary-main flex items-center gap-2">
             <RiContactsLine className="text-lg" /> Contact Us
           </Link>
         </div>
