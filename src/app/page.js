@@ -5,7 +5,9 @@ import Footer from "./_components/footer";
 import HomeProducts from "./_components/home-products";
 import HomeFeature from "./_components/home-feature";
 import HomeSection from "./_components/home-section";
-import ContactForm from "./_components/contact-form";
+import Testimonal from "./_components/testimonal-slider";
+import ContactUs from "./_components/contact-form";
+import FAQSection from "./_components/faq";
 
 export default function Home() {
   return (
@@ -16,7 +18,9 @@ export default function Home() {
       <HomeProducts />
       <HomeAbout />
       <HomeFeature />
-      <ContactForm />
+      <ContactUs />
+      <Testimonal />
+      <FAQSection />
       <Footer />
     </div>
   );

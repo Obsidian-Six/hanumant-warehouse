@@ -15,7 +15,8 @@ export default function Footer() {
       <div
         className="lg:flex lg:justify-between items-center sm:grid sm:grid-cols-2 grid-cols-2 
         lg:py-20 max-w-7xl mx-auto xl:p-0 max-md:p-6"
-        style={{ fontFamily: `'Prata', serif` }}
+        style={{ fontFamily: `'Montserrat', sans-serif` }}
+
       >
         {/* Logo & Slogan Section */}
         <div className="lg:col-span-1 col-span-2 grid items-start justify-items-center">

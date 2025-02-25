@@ -31,7 +31,7 @@ const AboutComp = () => {
         Quality is at the core of HANUMANT Warehouse. We have a robust quality control system in place to ensure that all our products meet international standards. Our processing units follow stringent hygiene protocols, ensuring that every batch meets the highest purity levels. Our team continuously monitors the production process, from raw material procurement to final packaging.
       </p>
 
-      <img  src="/images/02.jpg" alt="No Preview" className="md:h-96 h-56 w-full object-cover" />
+      {/* <img  src="/images/02.jpg" alt="No Preview" className="md:h-96 h-56 w-full object-cover" /> */}
 
       {/* Our Team */}
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mt-12 mb-6 text-primary-main font-montserrat">

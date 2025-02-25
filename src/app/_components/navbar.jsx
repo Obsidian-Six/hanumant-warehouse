@@ -4,7 +4,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import { IoMenu, IoHomeOutline, IoInformationCircleOutline } from "react-icons/io5";
+import { IoMenu, IoHomeOutline, IoInformationCircleOutline, IoCall } from "react-icons/io5";
+import { MdMail } from "react-icons/md";
 import { RiProductHuntLine, RiArticleLine, RiContactsLine } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
 
@@ -23,6 +24,39 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
+      <header className="bg-primary-main/80 text-white">
+      <div className="max-w-7xl mx-auto flex justify-between items-center py-2 md:px-0 px-2">
+        {/* Contact Information */}
+        <div className="flex items-center md:space-x-4 max-md:justify-between w-full md:text-base sm:text-sm max-md:text-xs md:px-2">
+          {/* Phone Number */}
+          <div className="flex items-center space-x-2 hover:text-secondary-main transition-transform p-1 px-2 text-white font-semibold">
+            <IoCall />
+            <Link href="tel:+919411106883">+91 9411-106883</Link>
+          </div>
+
+          {/* Email */}
+          <div className="space-x-2 flex items-center hover:text-secondary-main transition-transform p-1 px-2 text-white font-semibold">
+            <MdMail />
+            <Link href="mailto:info@hanumantwarehouse.com">
+              info@hanumantwarehouse.com
+            </Link>
+          </div>
+        </div>
+
+        {/* Social Media Links */}
+        <div className="md:flex space-x-4 hidden">
+          <Link href="#" className="hover:text-secondary-main transition-transform">
+            <i className="fab fa-facebook-f"></i>
+          </Link>
+          <Link href="#" className="hover:text-secondary-main transition-transform">
+            <i className="fab fa-twitter"></i>
+          </Link>
+          <Link href="#" className="hover:text-secondary-main transition-transform">
+            <i className="fab fa-instagram"></i>
+          </Link>
+        </div>
+      </div>
+    </header>
       <nav className="bg-white border-primary-main border-b-2 py-2">
         <div className="flex items-center justify-between max-w-screen-xl px-4 mx-auto">
           {/* Logo */}
