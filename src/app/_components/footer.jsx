@@ -54,7 +54,8 @@ export default function Footer() {
           <Link href="/about-us" className="font-medium hover:text-primary-main flex items-center gap-2">
             <IoInformationCircleOutline className="text-lg" /> About Us
           </Link>
-          <Link href="/contact-us" className="font-medium hover:text-primary-main flex items-center gap-2">
+          <Link href="/contact-us
+          " className="font-medium hover:text-primary-main flex items-center gap-2">
             <RiContactsLine className="text-lg" /> Contact Us
           </Link>
         </div>
@@ -76,19 +77,19 @@ export default function Footer() {
           <div className="flex items-center gap-3 md:text-lg text-base md:w-[80%]">
             <IoCall className="md:text-2xl text-xl text-primary-main" />
             <p className="grid">
-              <Link href="tel:+919XXXXXXXXX" className="hover:text-primary-main">
-                +91 XXXXXXXXXX
+              <Link href="tel:9414408320" className="hover:text-primary-main">
+               94144-08320
               </Link>
             </p>
           </div>
-          <div className="flex items-center gap-3 md:text-lg text-sm md:w-[80%]">
+          <div className="flex items-center gap-3 md:text-lg text-sm md:w-[100%]">
             <MdEmail className="md:text-2xl text-xl text-primary-main" />
             <p className="grid">
-              <Link href="mailto:info@hanumantwarehouse.com" className="hover:text-primary-main">
-                info@hanumantwarehouse.com
+              <Link href="mailto:hanumantwarehouse@gmail.com" className="hover:text-primary-main">
+                hanumantwarehouse@gmail.com
               </Link>
-              <Link href="mailto:support@hanumantwarehouse.com" className="hover:text-primary-main">
-                support@hanumantwarehouse.com
+              <Link href="mailto:bangvarun08320@gmail.com" className="hover:text-primary-main">
+              bangvarun08320@gmail.com 
               </Link>
             </p>
           </div>

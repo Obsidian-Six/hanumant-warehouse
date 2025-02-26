@@ -10,7 +10,7 @@ export default function AboutDetail() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto py-12 md:px-0 px-4 overflow-hidden">
+    <main className="max-w-7xl mx-auto my-10 md:px-0 px-4 overflow-hidden">
       <div className="flex flex-col md:flex-row md:space-x-12">
         <div className="md:w-2/3">
           <div className="flex items-center space-x-4 mb-6">
@@ -29,14 +29,14 @@ export default function AboutDetail() {
           <div>
             <img
               alt="HANUMANT Warehouse Export Operations"
-              className="w-full h-auto md:h-96 object-cover rounded mb-6"
+              className="w-full h-auto md:h-[26.5rem] object-cover rounded mb-6"
               src="/images/02.jpg"
             />
           </div>
         </div>
 
         {/* MotionDiv Removed for Now */}
-        <div className="md:w-1/3 space-y-10">
+        <div className="md:w-1/3 space-y-5">
           <div className="bg-white p-6 shadow shadow-secondary-main rounded">
             <div className="flex items-center space-x-4 mb-4">
               <i className="fas fa-seedling text-secondary-main text-3xl"></i>

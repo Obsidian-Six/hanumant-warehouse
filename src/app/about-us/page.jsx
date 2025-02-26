@@ -10,8 +10,8 @@ const page = () => {
     <div>
       <Navbar />
       <HeroSection name={"About Us"} img="" />
-      <AboutComp />
       <AboutDetail />
+      <AboutComp />
       <Footer />
     </div>
   );

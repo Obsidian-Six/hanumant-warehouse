@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "How can I place an order?",
     answer:
-      "You can contact us via email at info@hanumantwarehouse.com or call us at +91 9411-106883. Our team will assist you with the ordering process.",
+      "You can contact us via email at info@hanumantwarehouse.com or call us at 94144-08320. Our team will assist you with the ordering process.",
   },
   {
     question: "Do you offer bulk order discounts?",

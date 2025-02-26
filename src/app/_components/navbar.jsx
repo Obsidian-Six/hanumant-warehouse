@@ -31,14 +31,14 @@ const Navbar = () => {
           {/* Phone Number */}
           <div className="flex items-center space-x-2 hover:text-secondary-main transition-transform p-1 px-2 text-white font-semibold">
             <IoCall />
-            <Link href="tel:+919411106883">+91 9411-106883</Link>
+            <Link href="tel:9414408320">94144-08320</Link>
           </div>
 
           {/* Email */}
           <div className="space-x-2 flex items-center hover:text-secondary-main transition-transform p-1 px-2 text-white font-semibold">
             <MdMail />
-            <Link href="mailto:info@hanumantwarehouse.com">
-              info@hanumantwarehouse.com
+            <Link href="mailto:hanumantwarehouse@gmail.com">
+            hanumantwarehouse@gmail.com
             </Link>
           </div>
         </div>

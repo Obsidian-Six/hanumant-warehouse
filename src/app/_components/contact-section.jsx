@@ -55,8 +55,8 @@ const ContactForm = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-xl font-medium text-primary-main">Phone</h3>
-                  <Link href="tel:+919XXXXXXXXX" className="text-heading-main md:text-base text-sm hover:text-secondary-main">
-                    +91 XXXXXXXXXX
+                  <Link href="tel:9414408320" className="text-heading-main md:text-base text-sm hover:text-secondary-main">
+                  94144-08320
                   </Link>
                 </div>
               </li>
@@ -67,12 +67,12 @@ const ContactForm = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-xl font-medium text-primary-main">Email</h3>
-                  <Link href="mailto:info@hanumantwarehouse.com" className="text-heading-main md:text-base text-sm hover:text-secondary-main">
-                    info@hanumantwarehouse.com
+                  <Link href="mailto:hanumantwarehouse@gmail.com" className="text-heading-main md:text-base text-sm hover:text-secondary-main">
+                    hanumantwarehouse@gmail.com
                   </Link>
                   <br />
-                  <Link href="mailto:support@hanumantwarehouse.com" className="text-heading-main md:text-base text-sm hover:text-secondary-main">
-                    support@hanumantwarehouse.com
+                  <Link href="mailto:bangvarun08320@gmail.com" className="text-heading-main md:text-base text-sm hover:text-secondary-main">
+                  bangvarun08320@gmail.com
                   </Link>
                 </div>
               </li>
