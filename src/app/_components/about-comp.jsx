@@ -70,19 +70,19 @@ const AboutComp = () => {
 </p>
 <ul className="list-none space-y-3 text-sm sm:text-base font-opensans">
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Globally Trusted Exporter </strong> with high-quality standards
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Globally Trusted Exporter </strong>{" "} with high-quality standards
   </li>
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Best-in-Class Processing & Packaging </strong> for freshness and purity
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Best-in-Class Processing & Packaging </strong>{" "} for freshness and purity
   </li>
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Sustainable & Natural Products </strong> backed by research and certifications
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Sustainable & Natural Products </strong>{" "} backed by research and certifications
   </li>
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Bulk Supply & Competitive Pricing </strong> for international markets
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Bulk Supply & Competitive Pricing </strong>{" "} for international markets
   </li>
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Reliable Logistics & On-time Delivery </strong> worldwide
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Reliable Logistics & On-time Delivery </strong>{" "} worldwide
   </li>
 </ul>
 
