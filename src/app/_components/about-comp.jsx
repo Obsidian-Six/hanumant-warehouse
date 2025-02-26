@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const AboutComp = () => {
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:px-8 text-justify">
+    <div className="max-w-7xl mx-auto px-4 sm:px-0 my-10 text-justify">
       {/* About Us Section */}
       <p className="mb-6 text-sm sm:text-xl font-opensans leading-relaxed">
         <strong>HANUMANT Warehouse</strong> is a trusted name in the agricultural industry, specializing in the supply and export of high-quality
@@ -63,28 +63,29 @@ const AboutComp = () => {
 
       {/* Why Us */}
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mt-12 mb-6 text-primary-main font-montserrat">
-        WHY CHOOSE US?
-      </h2>
-      <p className="mb-4 text-sm sm:text-xl font-opensans">
-        Our strong industry presence and commitment to quality make us a preferred choice for bulk agricultural supplies. Here’s why clients trust HANUMANT Warehouse:
-      </p>
-      <ul className="list-none space-y-2 text-sm sm:text-base font-opensans">
-        <li className="flex items-center">
-          <FaCheckCircle className="text-primary-main mr-2" /> Located in Merta City, India's largest raw material mandi
-        </li>
-        <li className="flex items-center">
-          <FaCheckCircle className="text-primary-main mr-2" /> Guaranteed premium quality and purity
-        </li>
-        <li className="flex items-center">
-          <FaCheckCircle className="text-primary-main mr-2" /> Advanced processing & packaging facilities
-        </li>
-        <li className="flex items-center">
-          <FaCheckCircle className="text-primary-main mr-2" /> Competitive pricing & bulk supply availability
-        </li>
-        <li className="flex items-center">
-          <FaCheckCircle className="text-primary-main mr-2" /> On-time delivery and excellent customer support
-        </li>
-      </ul>
+  WHY CHOOSE US?
+</h2>
+<p className="mb-4 text-sm sm:text-xl font-opensans">
+  We are a globally trusted exporter committed to providing <strong>premium-grade Guar and Spice products</strong> with the highest quality standards. Here’s why clients trust <strong>HANUMANT Warehouse</strong>:
+</p>
+<ul className="list-none space-y-3 text-sm sm:text-base font-opensans">
+  <li className="flex items-center">
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Globally Trusted Exporter</strong> with high-quality standards
+  </li>
+  <li className="flex items-center">
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Best-in-Class Processing & Packaging</strong> for freshness and purity
+  </li>
+  <li className="flex items-center">
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Sustainable & Natural Products</strong> backed by research and certifications
+  </li>
+  <li className="flex items-center">
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Bulk Supply & Competitive Pricing</strong> for international markets
+  </li>
+  <li className="flex items-center">
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Reliable Logistics & On-time Delivery</strong> worldwide
+  </li>
+</ul>
+
     </div>
   );
 };
