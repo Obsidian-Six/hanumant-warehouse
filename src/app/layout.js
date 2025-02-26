@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
 
         <div className="fixed bottom-4 right-4 z-20">
         <Link
-        href="https://wa.me/919999999999&text=Hey!%20Can%20I%20Get%20More%20Info%20On%20This?" // Replace with actual WhatsApp number
+        href="https://api.whatsapp.com/send?phone=9414408320&text=Hey!%20Can%20I%20Get%20More%20Info%20On%20This?" // Replace with actual WhatsApp number
         target="_blank"
         className="fixed bottom-6 right-6 bg-primary-main text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
       >

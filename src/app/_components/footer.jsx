@@ -71,7 +71,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              HANUMANT Warehouse, Kosiyanada, Merta Road Marg, Merta City 341510, District Nagour, Rajasthan, India.
+              Catalyst International LLC, Business Center, SHAMS FREE ZONE, SHARJAH, UAE
             </Link>
           </div>
           <div className="flex items-center gap-3 md:text-lg text-base md:w-[80%]">

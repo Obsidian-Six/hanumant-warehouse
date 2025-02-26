@@ -83,8 +83,8 @@ const ContactForm = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-xl font-medium text-primary-main">Address</h3>
-                  <p className="text-heading-main md:text-base text-sm md:max-w-xl am:max-w-sm max-w-64">
-                    Hanumant Warehouse, Kosiyanada, Merta Road Marg, Merta City 341510, District Nagour, Rajasthan, India
+                  <p className="text-heading-main md:text-base text-sm md:max-w-lg am:max-w-sm max-w-64">
+                  Catalyst International LLC, Business Center, SHAMS FREE ZONE, SHARJAH, UAE
                   </p>
                 </div>
               </li>

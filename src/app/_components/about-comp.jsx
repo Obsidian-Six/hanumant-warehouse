@@ -66,23 +66,23 @@ const AboutComp = () => {
   WHY CHOOSE US?
 </h2>
 <p className="mb-4 text-sm sm:text-xl font-opensans">
-  We are a globally trusted exporter committed to providing <strong>premium-grade Guar and Spice products</strong> with the highest quality standards. Here’s why clients trust <strong>HANUMANT Warehouse</strong>:
+  We are a globally trusted exporter committed to providing <strong> premium-grade Guar and Spice products </strong> with the highest quality standards. Here’s why clients trust <strong> HANUMANT Warehouse</strong>:
 </p>
 <ul className="list-none space-y-3 text-sm sm:text-base font-opensans">
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Globally Trusted Exporter</strong> with high-quality standards
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Globally Trusted Exporter </strong> with high-quality standards
   </li>
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Best-in-Class Processing & Packaging</strong> for freshness and purity
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Best-in-Class Processing & Packaging </strong> for freshness and purity
   </li>
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Sustainable & Natural Products</strong> backed by research and certifications
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Sustainable & Natural Products </strong> backed by research and certifications
   </li>
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Bulk Supply & Competitive Pricing</strong> for international markets
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Bulk Supply & Competitive Pricing </strong> for international markets
   </li>
   <li className="flex items-center">
-    <FaCheckCircle className="text-primary-main mr-2" /> <strong>Reliable Logistics & On-time Delivery</strong> worldwide
+    <FaCheckCircle className="text-primary-main mr-2" /> <strong> Reliable Logistics & On-time Delivery </strong> worldwide
   </li>
 </ul>
 
