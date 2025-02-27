@@ -67,7 +67,7 @@ const ContactForm = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-xl font-medium text-primary-main">Email</h3>
-                  <Link href="mailto:hanumantwarehouse@gmail.com" className="text-heading-main md:text-base text-sm hover:text-secondary-main">
+                  <Link href="mailto:hanumantwarehouse@gmail.com" className="text-heading-main md:text-base text-sm hover:text-secondary-main list-disc">
                     hanumantwarehouse@gmail.com
                   </Link>
                   <br />
@@ -83,9 +83,13 @@ const ContactForm = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-xl font-medium text-primary-main">Address</h3>
-                  <p className="text-heading-main md:text-base text-sm md:max-w-lg am:max-w-sm max-w-64">
+                  <li className="text-heading-main md:text-base text-sm md:max-w-lg am:max-w-sm max-w-64 ">
                   Catalyst International LLC, Business Center, SHAMS FREE ZONE, SHARJAH, UAE
-                  </p>
+                  </li>
+                  <div className="h-[1px]  my-1" />
+                  <li className="text-heading-main md:text-base text-sm md:max-w-lg am:max-w-sm max-w-64 ">
+                  Hanumant Warehouse, Kosiyanada, Merta Road Marg, Merta City 341510, District Nagour, Rajasthan, India
+                  </li>
                 </div>
               </li>
             </ul>
@@ -143,6 +147,29 @@ const ContactForm = () => {
                     required
                   />
                 </label>
+                <label className=" md:col-span-2">
+                  <p className="text-sm font-semibold text-heading-main mb-1">Products</p>
+                   
+            <select
+              className="outline-none w-full rounded-md border border-gray-400 py-2 text-sm pl-2"
+              name="Product"
+              value={formData.Product}
+              onChange={handleChange}
+              required
+            >
+              <option value="">Select Product</option>
+              <option value="Guar Refined Dall">Guar Refined Dall</option>
+              <option value="Guar Roasted Korma">Guar Roasted Korma</option>
+              <option value="Guar Churi">Guar Churi</option>
+              <option value="Cumin Seed">Cumin Seed</option>
+              <option value="Dill Seed">Dill Seed</option>
+              <option value="Psyllium Husk">Psyllium Husk</option>
+              <option value="Fennel Seed">Fennel Seed</option>
+              <option value="Fenugreek Seed">Fenugreek Seed</option>
+              <option value="Other">Other</option>
+            </select> 
+                </label>
+          
                 <label className="md:col-span-2">
                   <p className="text-sm font-semibold text-heading-main mb-1">Your Message</p>
                   <textarea

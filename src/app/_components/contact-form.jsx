@@ -138,6 +138,7 @@ export default function ContactUs() {
               <option value="Psyllium Husk">Psyllium Husk</option>
               <option value="Fennel Seed">Fennel Seed</option>
               <option value="Fenugreek Seed">Fenugreek Seed</option>
+              <option value="Other">Other</option>
             </select>
           </div>
           <textarea

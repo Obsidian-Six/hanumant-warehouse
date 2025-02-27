@@ -70,14 +70,14 @@ const HomeFeature = () => {
         </div>
 
         {/* Contact Button */}
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <Link
             className="bg-primary-main text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-secondary-main transition-all duration-300"
             href="/blogs"
           >
             Our Blogs
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

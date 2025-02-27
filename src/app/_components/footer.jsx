@@ -63,18 +63,22 @@ export default function Footer() {
         {/* Address Section */}
         <div className="flex flex-col gap-3 font-medium col-span-1 items-start xl:w-[30%]">
           <h1 className="text-xl sm:text-2xl md:my-3 mt-3 text-primary-main font-montserrat">Company Address</h1>
-          <div className="flex items-center gap-3 md:text-lg text-sm w-full">
-            <FaLocationDot className="md:text-2xl text-xl text-primary-main" />
-            <Link
-              href="https://www.google.com/maps/search/Kosiyanada,+Merta+Road+Marg,+Merta+City,+Nagour,+Rajasthan/"
-              className="max-sm:w-[80%] xl:w-full hover:text-primary-main capitalize"
-              target="_blank"
+          <div className="flex items-center gap-3  text-sm w-full">
+            <FaLocationDot className="md:text-4xl text-4xl text-primary-main" />
+            <div>
+            <div className="] hover:text-primary-main "
               rel="noopener noreferrer"
             >
               Catalyst International LLC, Business Center, SHAMS FREE ZONE, SHARJAH, UAE
-            </Link>
+            </div>
+            <div className="border h-[1px] bg-primary-main my-1" />
+            <div className="] hover:text-primary-main ">
+            Hanumant Warehouse, Kosiyanada, Merta Road Marg, Merta City 341510, District Nagour, Rajasthan, India
+            </div>
+
+            </div>
           </div>
-          <div className="flex items-center gap-3 md:text-lg text-base md:w-[80%]">
+          <div className="flex items-center gap-3  text-base md:w-[80%]">
             <IoCall className="md:text-2xl text-xl text-primary-main" />
             <p className="grid">
               <Link href="tel:9414408320" className="hover:text-primary-main">
@@ -82,7 +86,7 @@ export default function Footer() {
               </Link>
             </p>
           </div>
-          <div className="flex items-center gap-3 md:text-lg text-sm md:w-[100%]">
+          <div className="flex items-center gap-3  text-sm md:w-[100%]">
             <MdEmail className="md:text-2xl text-xl text-primary-main" />
             <p className="grid">
               <Link href="mailto:hanumantwarehouse@gmail.com" className="hover:text-primary-main">
