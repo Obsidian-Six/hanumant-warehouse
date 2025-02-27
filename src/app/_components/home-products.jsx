@@ -41,7 +41,7 @@ const products = [
       "Helps in weight gain and muscle development in livestock.",
     ],
     importerCountries: ["Saudi Arabia", "Canada", "Indonesia", "Brazil", "Egypt"],
-    image: "https://5.imimg.com/data5/AB/OF/MY-25306869/chana-dal-churi-500x500.jpg",
+    image: "https://www.gosupps.com/media/catalog/product/cache/25/image/1500x/040ec09b1e35df139433887a97daa66f/4/1/41gH5YUAGNL._AC__2.jpg",
     alt: "Guar churi",
   }
 ];
