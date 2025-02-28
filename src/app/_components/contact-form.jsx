@@ -14,10 +14,6 @@ export default function ContactUs() {
     Requirement: "",
   });
 
-  const variants = {
-    startUp: { y: 0, scale: 0 },
-    endUp: { y: 0, scale: 1 },
-  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,7 +29,7 @@ export default function ContactUs() {
 
     try {
       setLoading(true);
-      const response = await fetch("https://sheetdb.io/api/v1/nk2b5gozjtzhz", {
+      const response = await fetch("https://sheetdb.io/api/v1/0t6w8bzfio611", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

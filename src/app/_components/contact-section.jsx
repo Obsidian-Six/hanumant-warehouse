@@ -13,23 +13,49 @@ const ContactForm = () => {
     Country: "",
     Email: "",
     Number: "",
+    Product: "",
     Requirement: "",
   });
 
   const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    console.log("Form Data Submitted:", formData);
-    setTimeout(() => {
+    setMessage("");
+
+    try {
+      const response = await fetch("https://sheetdb.io/api/v1/0t6w8bzfio611", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: [formData] }), // SheetDB expects a `data` object
+      });
+
       setLoading(false);
-      alert("Form submitted successfully!");
-    }, 2000);
+
+      if (response.ok) {
+        alert("✅ Form submitted successfully!");
+        setFormData({
+          Name: "",
+          Country: "",
+          Email: "",
+          Number: "",
+          Product: "",
+          Requirement: "",
+        });
+      } else {
+        alert("❌ Failed to submit form. Try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setLoading(false);
+      alert("❌ An error occurred while submitting the form.");
+    }
   };
 
   return (
@@ -38,9 +64,6 @@ const ContactForm = () => {
         <div className="grid md:grid-cols-2 gap-6 items-center">
           {/* Contact Details */}
           <div>
-            {/* <p className="md:text-lg text-base text-[#0F1416]">
-              Have questions? We're here to help.
-            </p> */}
             <h2 className="text-primary-main lg:text-4xl md:text-3xl text-2xl font-semibold md:my-3 my-1">
               Contact Us
             </h2>
