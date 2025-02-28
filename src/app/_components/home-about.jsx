@@ -27,7 +27,7 @@ const HomeAbout = ({ aboutData }) => {
         <img
           alt={aboutData?.imageAlt || "Warehouse with shelves filled with boxes and products"}
           className="w-full md:max-w-lg h-auto rounded-lg shadow-lg"
-          src={aboutData?.image || "/images/01.jpg"}
+          src={aboutData?.image || "/images/02.jpg"}
         />
       </div>
     </div>
