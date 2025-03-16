@@ -1,6 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css"; // Import styles for flag and dropdown
+
 // import { MotionDiv } from "../utils/motion-div";
 
 export default function ContactUs() {
@@ -20,6 +23,13 @@ export default function ContactUs() {
     setFormData((prev) => ({
       ...prev,
       [name]: value,
+    }));
+  };
+
+  const handlePhoneChange = (value) => {
+    setFormData((prev) => ({
+      ...prev,
+      Number: value, // Updated to include country code
     }));
   };
 
@@ -91,7 +101,7 @@ export default function ContactUs() {
               onChange={handleChange}
               required
             />
-            <input
+               <input
               className="py-2 px-4 rounded-lg border border-primary-main"
               placeholder="Country"
               type="text"
@@ -109,14 +119,13 @@ export default function ContactUs() {
               onChange={handleChange}
               required
             />
-            <input
-              className="py-2 px-4 rounded-lg border border-primary-main"
-              placeholder="WhatsApp Number"
-              type="tel"
-              name="Number"
+            <PhoneInput
+              country={"in"} // Default country code (change as needed)
               value={formData.Number}
-              onChange={handleChange}
-              required
+              onChange={handlePhoneChange}
+              inputClass="w-full py-2 px-4 rounded-lg border border-primary-main"
+              inputStyle={{ width: "100%", height: "40px", borderRadius: "8px" }}
+              dropdownStyle={{ borderRadius: "8px" }}
             />
             <select
               className="py-2 px-4 rounded-lg border border-primary-main md:col-span-2"

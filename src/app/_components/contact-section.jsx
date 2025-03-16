@@ -6,6 +6,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall, IoMail } from "react-icons/io5";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -23,6 +25,14 @@ const ContactForm = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  const handlePhoneChange = (value) => {
+    setFormData((prev) => ({
+      ...prev,
+      Number: value, // Updated to include country code
+    }));
+  };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -160,7 +170,7 @@ const ContactForm = () => {
                 </label>
                 <label>
                   <p className="text-sm font-semibold text-heading-main mb-1">WhatsApp Number</p>
-                  <input
+                  {/* <input
                     type="tel"
                     placeholder="Your WhatsApp number"
                     className="outline-none w-full rounded-md border border-gray-400 py-2 text-sm pl-2"
@@ -168,6 +178,14 @@ const ContactForm = () => {
                     value={formData.Number}
                     onChange={handleChange}
                     required
+                  /> */}
+                  <PhoneInput
+                    country={"in"} // Default country code (change as needed)
+                    value={formData.Number}
+                    onChange={handlePhoneChange}
+                    inputClass="w-full py-2 px-4 rounded-lg border border-primary-main"
+                    inputStyle={{ width: "100%", height: "40px", borderRadius: "8px" }}
+                    dropdownStyle={{ borderRadius: "8px" }}
                   />
                 </label>
                 <label className=" md:col-span-2">
