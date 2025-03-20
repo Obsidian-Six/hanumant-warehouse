@@ -82,7 +82,7 @@ export default function Footer() {
             <IoCall className="md:text-2xl text-xl text-primary-main" />
             <p className="grid">
               <Link href="tel:9414408320" className="hover:text-primary-main">
-               94144-08320
+               +91 94144-08320
               </Link>
             </p>
           </div>

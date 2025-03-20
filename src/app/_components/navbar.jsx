@@ -31,7 +31,7 @@ const Navbar = () => {
           {/* Phone Number */}
           <div className="flex items-center space-x-2 hover:text-secondary-main transition-transform p-1 px-2 text-white font-semibold">
             <IoCall />
-            <Link href="tel:9414408320">94144-08320</Link>
+            <Link href="tel:9414408320">+91 94144-08320</Link>
           </div>
 
           {/* Email */}
