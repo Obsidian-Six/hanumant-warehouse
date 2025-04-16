@@ -28,11 +28,11 @@ const HomeHerosection = () => {
             Exported to 20+ Countries
           </p>
           <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-opensans">
-            Best-in-Class Processing & Packaging
+           vast experience of more than 15 years
           </p>
-          <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl mb-6 font-opensans">
+{/*           <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl mb-6 font-opensans">
             Trusted by Global Clients
-          </p>
+          </p> */}
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0">
