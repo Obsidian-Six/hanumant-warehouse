@@ -24,11 +24,11 @@ const HomeHerosection = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-main mb-4 font-montserrat uppercase">
             PREMIUM QUALITY guar gum product
           </h1>
-          <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-opensans">
+{/*           <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-opensans">
             Exported to 20+ Countries
-          </p>
+          </p> */}
           <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl mb-6 font-opensans">
-           vast experience of more than 15 years
+           Vast experience of more than 15 years
           </p>
 {/*           <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl mb-6 font-opensans">
             Trusted by Global Clients
