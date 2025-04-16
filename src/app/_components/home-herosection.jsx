@@ -27,7 +27,7 @@ const HomeHerosection = () => {
           <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-opensans">
             Exported to 20+ Countries
           </p>
-          <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-opensans">
+          <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl mb-6 font-opensans">
            vast experience of more than 15 years
           </p>
 {/*           <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl mb-6 font-opensans">
