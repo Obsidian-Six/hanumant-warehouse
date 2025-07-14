@@ -31,7 +31,7 @@ export default function Footer() {
               <FaFacebookF className="text-xl bg-primary-main text-white h-10 w-10 p-2 rounded-xl" />
             </a>
             <a href="#" className="hover:scale-110 transition-all">
-              <CiTwitter className="text-xl bg-primary-main text-white h-10 w-10 p-2 rounded-xl" />
+              <CiTwitter  className="text-xl bg-primary-main text-white h-10 w-10 p-2 rounded-xl" />
             </a>
             <a href="#" className="hover:scale-110 transition-all">
               <FaInstagram className="text-xl bg-primary-main text-white h-10 w-10 p-2 rounded-xl" />
@@ -43,20 +43,20 @@ export default function Footer() {
         <div className="md:grid gap-3 md:text-lg text-sm hidden">
           <h1 className="text-2xl md:my-3 mt-3 text-primary-main capitalize font-montserrat">Quick Links</h1>
           <Link href="/" className="font-medium hover:text-primary-main flex items-center gap-2">
-            <FaHome className="text-lg" /> Home
+            <FaHome title="a" className="text-lg" /> Home
           </Link>
           <Link href="/products" className="font-medium hover:text-primary-main flex items-center gap-2">
-            <RiProductHuntLine className="text-lg" /> Our Products
+            <RiProductHuntLine title="n" className="text-lg" /> Our Products
           </Link>
           <Link href="/blogs" className="font-medium hover:text-primary-main flex items-center gap-2">
-            <RiArticleLine className="text-lg" /> Our Blogs
+            <RiArticleLine title="i" className="text-lg" /> Our Blogs
           </Link>
           <Link href="/about-us" className="font-medium hover:text-primary-main flex items-center gap-2">
-            <IoInformationCircleOutline className="text-lg" /> About Us
+            <IoInformationCircleOutline title="k" className="text-lg" /> About Us
           </Link>
           <Link href="/contact-us
           " className="font-medium hover:text-primary-main flex items-center gap-2">
-            <RiContactsLine className="text-lg" /> Contact Us
+            <RiContactsLine title="et" className="text-lg" /> Contact Us
           </Link>
         </div>
 
