@@ -4,7 +4,6 @@ import HomeAbout from "./_components/home-about";
 import Footer from "./_components/footer";
 import HomeProducts from "./_components/home-products";
 import HomeFeature from "./_components/home-feature";
-import HomeSection from "./_components/home-section";
 import Testimonal from "./_components/testimonal-slider";
 import ContactUs from "./_components/contact-form";
 import FAQSection from "./_components/faq";
